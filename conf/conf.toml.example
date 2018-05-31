@@ -1,0 +1,5 @@
+[zhenai]
+    [zhenai.elastic]
+    elastic_url = ""
+    elastic_index = "zhenai-person"
+    elastic_type = "person"
