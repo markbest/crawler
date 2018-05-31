@@ -35,7 +35,7 @@ func NewES(host string, logHandle *log.Logger) *ES {
 	client, err := elastic.NewClient(
 		elastic.SetURL(host),
 		elastic.SetSniff(false),
-		elastic.SetInfoLog(logHandle),
+		elastic.SetErrorLog(logHandle),
 		elastic.SetRetrier(retry),
 		elastic.SetHealthcheck(false),
 	)
